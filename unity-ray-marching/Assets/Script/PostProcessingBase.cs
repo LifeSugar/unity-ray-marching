@@ -11,9 +11,9 @@
 
 using UnityEngine;
 
-#if UNITY_EDITOR
+
 using UnityEditor;
-#endif
+
 
 [RequireComponent(typeof(Camera))]
 [ExecuteInEditMode]
@@ -21,12 +21,12 @@ public class PostProcessingBase : MonoBehaviour
 {
   public bool ApplyToSceneCamera = true;
 
-  #if UNITY_EDITOR
+  // #if UNITY_EDITOR
   private Camera m_sceneCamera;
   private PostProcessingBase m_postProcessing;
   private bool m_appliedToSceneCamera = false;
   private bool m_attachedToSceneCamera = false;
-  #endif
+  // #endif
 
   private void DisposeSceneCamera()
   {

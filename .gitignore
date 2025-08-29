@@ -30,3 +30,4 @@ sysinfo.txt
 
 # Builds
 *.unitypackage
+unity-ray-marching/.DS_Store
